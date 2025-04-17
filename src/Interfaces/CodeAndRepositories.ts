@@ -101,6 +101,8 @@ export interface CreatePullRequestParams {
   title: string;
   description?: string;
   reviewers?: string[];
+  isNeedAutoComplete?: boolean;
+  isNeedDeleteSourceBranch?: boolean;
 }
 
 /**
@@ -175,4 +177,4 @@ export interface CompletePullRequestParams {
   deleteSourceBranch?: boolean;
   comment?: string;
   projectId?: string;
-} 
+}
